@@ -11,21 +11,21 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.viaapia.analystsnotebook.model.Acao;
-import br.com.viaapia.analystsnotebook.service.AcaoService;
+import br.com.viaapia.analystsnotebook.model.AppliedAction;
+import br.com.viaapia.analystsnotebook.service.ActionService;
 
 @RestController
 @RequestMapping("/acoes")
-public class AcaoController {
-    private final AcaoService acaoService;
+public class ActionController {
+    private final ActionService acaoService;
 
-    public AcaoController(AcaoService acaoService) {
+    public ActionController(ActionService acaoService) {
         this.acaoService = acaoService;
     }
 
     // Implementação de métodos para manipular ações
     @GetMapping
-    public List<Acao> findAll() {
+    public List<AppliedAction> findAll() {
         return acaoService.findAll();
     }
 
@@ -36,7 +36,7 @@ public class AcaoController {
     }
 
     @PostMapping("/saveAll")
-    public ResponseEntity<?> saveAll(@RequestBody List<Acao> acoes) {
+    public ResponseEntity<?> saveAll(@RequestBody List<AppliedAction> acoes) {
         acaoService.saveAll(acoes);
         return new ResponseEntity<>("Ações salvas com sucesso", HttpStatus.CREATED);
     }

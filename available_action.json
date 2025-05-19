@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "description": "Alterar uso de maiúsculas e minúsculas"
+    },
+    {
+        "id": 2,
+        "description": "Compactar caracteres repetidos"
+    },
+    {
+        "id": 3,
+        "description": "Copiar valor da linha anterior"
+    },
+    {
+        "id": 4,
+        "description": "Extrair parte usando separador"
+    },
+    {
+        "id": 5,
+        "description": "Extrair parte usando larguras fixas"
+    },
+    {
+        "id": 6,
+        "description": "Incluir prefixo"
+    },
+    {
+        "id": 7,
+        "description": "Incluir sufixo"
+    },
+    {
+        "id": 8,
+        "description": "Localizar e substituir texto"
+    },
+    {
+        "id": 9,
+        "description": "Prefixo com outra coluna"
+    },
+    {
+        "id": 10,
+        "description": "Remover caracteres"
+    },
+    {
+        "id": 11,
+        "description": "Remover prefixo"
+    },
+    {
+        "id": 12,
+        "description": "Remover sufixo"
+    },
+    {
+        "id": 13,
+        "description": "Substituir a partir de arquivo de substituição"
+    },
+    {
+        "id": 14,
+        "description": "Substituir valor"
+    },
+    {
+        "id": 15,
+        "description": "Sufixo com outra coluna"
+    },
+    {
+        "id": 16,
+        "description": "Suprimir caracteres"
+    }
+]

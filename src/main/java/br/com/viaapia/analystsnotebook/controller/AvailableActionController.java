@@ -5,19 +5,19 @@ import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.viaapia.analystsnotebook.model.AcaoDisponivel;
-import br.com.viaapia.analystsnotebook.service.AcaoDisponivelService;
+import br.com.viaapia.analystsnotebook.model.AvailableAction;
+import br.com.viaapia.analystsnotebook.service.AvailableActionService;
 
 @RestController
-public class AcaoDisponivelController {
-    private final AcaoDisponivelService acaoDisponivelService;
+public class AvailableActionController {
+    private final AvailableActionService acaoDisponivelService;
 
-    public AcaoDisponivelController(AcaoDisponivelService acaoDisponivelService) {
+    public AvailableActionController(AvailableActionService acaoDisponivelService) {
         this.acaoDisponivelService = acaoDisponivelService;
     }
 
     @GetMapping("/acoes-disponiveis")
-    public List<AcaoDisponivel> getAcoesDisponiveis() {
+    public List<AvailableAction> getAcoesDisponiveis() {
         return acaoDisponivelService.getAcoesDisponiveis();
     }
 
