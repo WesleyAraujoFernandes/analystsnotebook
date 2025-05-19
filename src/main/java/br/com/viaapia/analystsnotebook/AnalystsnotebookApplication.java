@@ -1,13 +1,13 @@
-package br.com.viaapia.analistsnotebook;
+package br.com.viaapia.analystsnotebook;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AnalistsnotebookApplication {
+public class AnalystsnotebookApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AnalistsnotebookApplication.class, args);
+		SpringApplication.run(AnalystsnotebookApplication.class, args);
 	}
 
 }
