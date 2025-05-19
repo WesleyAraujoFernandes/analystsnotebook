@@ -1,4 +1,4 @@
-package br.com.viaapia.analistsnotebook.entity.importacao;
+package br.com.viaapia.analistsnotebook.importacao.entity;
 
 import org.springframework.data.annotation.Id;
 
