@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.Data;
 
-@Document(collection = "design_acoes_disponiveis")
+@Document(collection = "design_action_available")
 @Data
 public class AvailableAction {
     @Id
