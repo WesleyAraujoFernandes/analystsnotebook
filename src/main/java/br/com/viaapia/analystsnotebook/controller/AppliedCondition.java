@@ -15,5 +15,5 @@ public class AppliedCondition {
     @Id
     private String id;
     private List<Map<Condition, String>> conditions;
-    private String value;
+    // private String value;
 }

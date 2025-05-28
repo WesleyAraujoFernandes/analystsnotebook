@@ -15,29 +15,29 @@ import br.com.viaapia.analystsnotebook.model.AppliedAction;
 import br.com.viaapia.analystsnotebook.service.ActionService;
 
 @RestController
-@RequestMapping("/acoes")
+@RequestMapping("/action")
 public class ActionController {
-    private final ActionService acaoService;
+    private final ActionService actionService;
 
-    public ActionController(ActionService acaoService) {
-        this.acaoService = acaoService;
+    public ActionController(ActionService actionService) {
+        this.actionService = actionService;
     }
 
     // Implementação de métodos para manipular ações
     @GetMapping
     public List<AppliedAction> findAll() {
-        return acaoService.findAll();
+        return actionService.findAll();
     }
 
     @DeleteMapping
     public ResponseEntity<Void> deleteAll() {
-        acaoService.deleteAll();
+        actionService.deleteAll();
         return ResponseEntity.noContent().build();
     }
 
     @PostMapping("/saveAll")
-    public ResponseEntity<?> saveAll(@RequestBody List<AppliedAction> acoes) {
-        acaoService.saveAll(acoes);
+    public ResponseEntity<?> saveAll(@RequestBody List<AppliedAction> actions) {
+        actionService.saveAll(actions);
         return new ResponseEntity<>("Ações salvas com sucesso", HttpStatus.CREATED);
     }
 

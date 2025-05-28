@@ -1,0 +1,49 @@
+{
+	"fieldName": "CAMPONOVO",
+	"fieldDefinition": "Código OACI<SPACE>Nome<DOT>Teste<COMMA>",
+	"actions": [
+		{
+			"type": "ADD_PREFIX",
+			"value": "PREFIX_VALUE_TEST",
+			"conditions": [
+				{
+					"name": "CONTAINS",
+					"value": "ABC"
+				},
+				{
+					"name": "ENDS_WITH",
+					"value": "DEF"
+				}
+			]
+		},
+		{
+			"type": "REMOVE_TEXT",
+			"find": "ABC",
+			"conditions": [
+				{
+					"name": "STARTS_WITH",
+					"value": "ABC"
+				},
+				{
+					"name": "NOT_EMPTY"
+				}
+			]
+		},
+		{
+			"type": "EXTRACT_TEXT_WITH_FIXED_LENGTH",
+			"initialPos": "1",
+			"finalPos": "2",
+			"initialPosInclusive": true,
+			"finalPosInclusive": false,
+			"conditions": [
+				{
+					"name": "STARTS_WITH",
+					"value": "ABC"
+				},
+				{
+					"name": "NOT_EMPTY"
+				}
+			]
+		}
+	]
+}
